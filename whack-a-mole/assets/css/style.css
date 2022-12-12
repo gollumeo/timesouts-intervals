@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+#game-board {
+  margin: 0 auto;
+  background-color: green;
+  border-radius: 20px;
+  width: 50%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#mole1,
+#mole2,
+#mole3,
+#mole4,
+#mole5,
+#mole6,
+#mole7,
+#mole8,
+#mole9,
+#mole10,
+#mole11,
+#mole12 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.up {
+  background-color: brown;
+}
+.up::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  transition: all ease-in-out 0.5s;
+}
+
+.play-again {
+  display: block;
+  background-color: rgb(214, 110, 110);
+  width: fit-content;
+  padding: 1vw 2vw;
+  margin: 0 auto;
+  transition: scale ease-in-out 0.8s;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.play-again:hover {
+  cursor: grab;
+  scale: 1.2;
+}/*# sourceMappingURL=style.css.map */
